@@ -14,11 +14,12 @@ var processText = (isEncrypt) => {
 var crypt = (fromAlphabet, toAlphabet, fromText, toText) => {
     var result = "";
     for (const key in fromText) {
-        if (fromAlphabet.indexOf(fromText[key]) == -1) {
+        const position = fromAlphabet.indexOf(fromText[key]);
+        if (position == -1) {
             result += fromText[key];
         }
         else {
-            result += toAlphabet[fromAlphabet.indexOf(fromText[key])];
+            result += toAlphabet[position];
         }
     };
     toText.value = result;
