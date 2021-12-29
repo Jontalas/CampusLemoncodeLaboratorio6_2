@@ -8,39 +8,26 @@ body {
     border: 2px solid grey;
 }
 
-.main {
-    padding: 16px;
+.textBox {
+    width: 94%;
+    height: 100px;
+    margin: 3%;
+    resize: none;
 }
 
-.results {
-    margin: 30px;
+.table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .element {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 3px;
+    display: table-cell;
+    text-align: center;
 }
 
-.element-left {
-    display: inline-block;
-    width: 10%;
-}
-
-.element-right {
-    display: inline-block;
-    width: 90%;
-}
-
-.product-count {
-    width: 40px;
-}
-
-.calculateButton {
-    font-size: 24px;
-    color: white;
-    background-color: green;
-    height:50px;
-    width:90%;
-    margin-left: 5%;
+.button {
+    font-size: large;
+    width: 50%;
+    height: 40px;
 }
